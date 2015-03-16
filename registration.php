@@ -32,7 +32,7 @@ function check_existing(str) {
     <div class="reg-div">
       <br>
        <h4>Username: <input type="text" onkeyup="check_existing(this.value)" name="username" required></h4>
-      <h4>Username Availability: <span id="valid"></span></h4>
+      <h4>Availability: <span id="valid"></span></h4>
     </div>
     <div class="reg-div">
       <h4>Password:
@@ -40,11 +40,11 @@ function check_existing(str) {
         <input type="password" name="password" required> </h4>
     </div>
     <div class="reg-div">
-      <h4>Choose a profile picture: <br> <input type="image" src="gilmore-girls.png" name="image" value="gilmore-girls.png" required> </h4>
+      <h4>Choose a profile picture! <br> <input type="image" src="gilmore-girls.png" name="image" value="gilmore-girls.png" required> </h4>
       <input type="image" src="gilmore.jpg" name="image" value="gilmore.jpg" required> 
       <br>
      <!-- <input type="image" src="gilmore-girls.png"> -->
-    <input type="submit" value="Register">
+    <!--<input type="submit" value="Register">-->
   </form>
   </div>
   <br>

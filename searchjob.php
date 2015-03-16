@@ -39,7 +39,7 @@ else {
 $result = $stmt ->get_result();
 //$result = $conn->query($stmt);
 
-echo "<table border='1'>
+echo "<table class = 'gridtable'>
 <tr>
 <th>First Name</th>
 <th>Last Name</th>

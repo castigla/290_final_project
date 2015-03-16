@@ -15,7 +15,7 @@ if ($conn->connect_error) {
 $sql = "SELECT characters.id, fname, lname, city FROM characters join location on characters.hometown = location.id";
 $result = $conn->query($sql);
 
-echo "<table border='1'>
+echo "<table class = 'gridtable'>
 <tr>
 <th>First Name</th>
 <th>Last Name</th>
