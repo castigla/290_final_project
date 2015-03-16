@@ -3,7 +3,7 @@ body {
 	text-align: center;
 }
 
-h1 {
+h1, h3 {
 
 	color: #483D8B;
 	text-align: center;
@@ -13,8 +13,11 @@ form {
 	text-align: center;
 }
 img {
-	width: 25%;
-	height: 20%;
+	
 	text-align: center;
-	float: left;
+	
+}
+input {
+	background-color : #99FFCC;
+	border: 1px solid #008000;
 }

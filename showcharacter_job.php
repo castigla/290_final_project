@@ -14,7 +14,7 @@ $sql = "SELECT cid, jid, fname, name FROM character_job join characters on chara
 $result = $conn->query($sql);
 
 //table setup
-echo "<table border='1'>
+echo "<table class = 'gridtable'>
 <tr>
 <th>Character</th>
 <th>Job</th>

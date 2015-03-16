@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 $sql = "SELECT id, city, state FROM location";
 $result = $conn->query($sql);
 
-echo "<table border='1'>
+echo "<table class = 'gridtable'>
 <tr>
 <th>ID</th>
 <th>City</th>

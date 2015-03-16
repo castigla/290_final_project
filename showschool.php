@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 $sql = "SELECT school.id, name, city FROM school join location on school.location = location.id";
 $result = $conn->query($sql);
 
-echo "<table border='1' >
+echo "<table class = 'gridtable'>
 <tr>
 <th>ID</th>
 <th>Name</th>
