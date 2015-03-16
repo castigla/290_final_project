@@ -11,11 +11,27 @@
 
     <h2>Welcome! This page allows you to create your very own private list of favorite characters. </h2>
 
-    <p>Check the characters below and include the date added to add them to your favorites list!</p>
+    <p>Click the characters below to add them to your favorites list!</p>
     <br>
-  <p>Characters to Choose From</p>
+     <form action="favorite_picture.php" method="POST">
+      
+ <div align="center">
+  <?php
+  include 'favorite_picture.php';
+  ?>
+  </div>
 
-      </form>
+</form>
+<br>
+
+
+<form action="fav_character_table.php" method="POST">
+ <div align="center">
+  </div>
+
+</form>
+
+      <p>Characters to Choose From</p>
       <form action="showallcharacters.php" method="POST">
   </form>
 
@@ -26,11 +42,7 @@
     ?>
     </div>
 
-    <form action="fav_character_table.php" method="POST">
- <div align="center">
-  </div>
-
-</form>
+    
 <br>
 <p>To return to the welcome page, click <a href="GGwelcome.php">here</a>.</p>
 <p>To logout, click <a href="logout.php">here</a>.</p>

@@ -1,35 +1,32 @@
-<!DOCTYPE html>
-<html>
- <head>
-  <meta charset="UTF-8"/>
-  <link rel="stylesheet" type="text/css" href="gghomestyling.css">
-  <title>Gilmore Girls</title>
-  </head>
+<?php
+session_start();
+//error_reporting(E_ALL);
+//ini_set('display_errors', 1);
+$servername = "oniddb.cws.oregonstate.edu";
+$dbusername = "castigla-db";
+$dbname = "castigla-db";
+$password = "DBR4F3gMYcmQLepi";
+// Create connection
+$conn = new mysqli($servername, $dbusername, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
 
-  <body>
-    <h1>Gilmore Girls</h1>
+$username = $_SESSION['username'];
+$sqlimage = "SELECT image from user where username = '$username'";
+$imageresult = $conn->query($sqlimage);
+$imagerow = mysqli_fetch_array($imageresult);
+$imagename = $imagerow['image'];
 
-    <p>Check the characters below and include the date added to add them to your favorites list!</p>
-    <br>
-  <p>Characters to Choose From</p>
 
-      </form>
-      <form action="showallcharacters.php" method="POST">
-  </form>
+if ($imagename == 'gilmore-girls.png') {
+  echo "<img src='gilmore-girls.png' alt='gilmore-girls'>";
+}
+else {
+  echo "<img src='gilmore.jpg' alt='gilmore'>";
+}
 
-<div align = 'center'>
-  <?php
-    include 'showallcharacters.php';
-    include 'fav_character_table.php';
-    ?>
-    </div>
 
-    <form action="fav_character_table.php" method="POST">
- <div align="center">
-  </div>
-
-</form>
-<br>
-<p>To return to the welcome page, click <a href="GGwelcome.php">here</a>.</p>
-<br>
-<br>
+$conn->close();
+?>

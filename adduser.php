@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 header('Content-Type: text/plain');
-header('Location: http://web.engr.oregonstate.edu/~dunforda/cs290/final_project/GGwelcome.php');
+header('Location: http://web.engr.oregonstate.edu/~dunforda/cs290/final_project/login.php');
 $servername = "oniddb.cws.oregonstate.edu";
 $dbusername = "castigla-db";
 $dbname = "castigla-db";

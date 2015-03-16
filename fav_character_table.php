@@ -13,8 +13,8 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-
 $username = $_SESSION['username'];
+
 $sql = "SELECT id, fname, lname, dateadded FROM user_character join characters on user_character.cid = characters.id WHERE uid = '$username' ";
 $result = $conn->query($sql);
 
@@ -22,7 +22,7 @@ echo "
 <br>
 <br>
 <p>Favorites</p>
-<table border='1'>
+<table class = 'gridtable'>
 <tr>
 <th>First Name</th>
 <th>Last Name</th>
