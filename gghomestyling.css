@@ -1,0 +1,20 @@
+body{
+	background-color: #DCDCDC;
+	text-align: center;
+
+	
+}
+h1, h2 {
+	color: #483D8B;
+	text-align: center;
+	font-weight: bold;
+}
+
+p {
+	color: #483D8B;
+	font-weight: bold
+
+}
+form {
+	text-align: center;
+}
